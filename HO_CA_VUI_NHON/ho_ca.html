@@ -19,10 +19,10 @@
         }
 
         body {
+            background: #000;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #000; /* tránh viền trắng */
         }
 
         #content {
@@ -36,24 +36,25 @@
         }
 
         .fish img {
-            max-width: 100%;
-            height: auto;
             pointer-events: none;
+            display: block;
         }
 
         #controls {
             position: absolute;
             bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%);
+            right: 15px;
             z-index: 999;
+            display: flex;
+            gap: 10px;
         }
 
         #controls button {
-            padding: 8px 16px;
-            font-size: 16px;
+            padding: 8px 14px;
+            font-size: 15px;
             cursor: pointer;
-            margin: 0 5px;
+            border-radius: 6px;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -62,13 +63,13 @@
 
 <div id="content">
 
-    <div class="fish" id="shark"><img src="images/shark.png"></div>
-    <div class="fish" id="diver1"><img src="images/diver1.png"></div>
-    <div class="fish" id="diver2"><img src="images/diver2.png"></div>
-    <div class="fish" id="diver3"><img src="images/diver3.png"></div>
-    <div class="fish" id="turtle"><img src="images/turtle.png"></div>
-    <div class="fish" id="goldfish"><img src="images/goldFishSchool.png"></div>
-    <div class="fish" id="faintfish"><img src="images/faintSchool.png"></div>
+    <div class="fish" id="shark"><img src="images/shark.png" alt=""></div>
+    <div class="fish" id="diver1"><img src="images/diver1.png" alt=""></div>
+    <div class="fish" id="diver2"><img src="images/diver2.png" alt=""></div>
+    <div class="fish" id="diver3"><img src="images/diver3.png" alt=""></div>
+    <div class="fish" id="turtle"><img src="images/turtle.png" alt=""></div>
+    <div class="fish" id="goldfish"><img src="images/goldFishSchool.png" alt=""></div>
+    <div class="fish" id="faintfish"><img src="images/faintSchool.png" alt=""></div>
 
 </div>
 

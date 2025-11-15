@@ -13,6 +13,7 @@
 
   body {
     font-family: Arial, sans-serif;
+    overflow: hidden;
   }
 
   nav {
@@ -21,8 +22,8 @@
     text-align: center;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 10;
+    width: 100vw;
+    z-index: 9999;
   }
 
   nav a {
@@ -33,10 +34,12 @@
   }
 
   iframe {
-    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
     height: calc(100vh - 60px);
     border: none;
-    margin-top: 60px;
   }
 </style>
 </head>
