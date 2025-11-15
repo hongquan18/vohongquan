@@ -1,102 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
     <title>Hồ cá vui nhộn</title>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #content {
+            width: 100vw;
+            height: calc(100vh - 60px); 
+            background-image: url('images/bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav style="
-      background: #111;
-      padding: 15px;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 9999;
-    ">
-        <a href="/vohongquan/index.html" style="color:white; margin: 0 15px; text-decoration:none; font-weight:bold;">Trang Chủ</a>
-        <a href="/vohongquan/cv/" style="color:white; margin: 0 15px; text-decoration:none; font-weight:bold;">CV (English)</a>
-        <a href="/vohongquan/HO_CA_VUI_NHON/" style="color:white; margin: 0 15px; text-decoration:none; font-weight:bold;">Hồ Cá Vui Nhộn</a>
-    </nav>
-
-    <div style="height:70px;"></div>
-
-    <div id="content">
-
-        <div class="fish" id="shark">
-            <img src="images/shark.png">
-        </div>
-
-        <div class="fish" id="diver1">
-            <img src="images/diver1.png">
-        </div>
-
-        <div class="fish" id="diver2">
-            <img src="images/diver2.png">
-        </div>
-
-        <div class="fish" id="diver3">
-            <img src="images/diver3.png">
-        </div>
-
-        <div class="fish" id="turtle">
-            <img src="images/turtle.png">
-        </div>
-
-        <div class="fish" id="goldfish">
-            <img src="images/goldFishSchool.png">
-        </div>
-
-        <div class="fish" id="faintfish">
-            <img src="images/faintSchool.png">
-        </div>
-
+<div id="content">
+    <div class="fish" id="shark">
+        <img src="images/shark.png">
     </div>
 
-    <audio id="myAudio" autoplay loop>
-        <source src="babyshark.mp3" type="audio/mpeg">
-    </audio>
-
-    <div id="controls">
-        <button id="musicBtn">🔊 Tắt nhạc</button>
-        <button id="bgBtn">🖼 Đổi nền</button>
+    <div class="fish" id="diver1">
+        <img src="images/diver1.png">
     </div>
 
-    <script>
-        const audio = document.getElementById("myAudio");
-        const btn = document.getElementById("musicBtn");
+    <div class="fish" id="diver2">
+        <img src="images/diver2.png">
+    </div>
 
-        btn.addEventListener("click", () => {
-            if (audio.paused) {
-                audio.play();
-                btn.textContent = "🔊 Tắt nhạc";
-            } else {
-                audio.pause();
-                btn.textContent = "🔈 Bật nhạc";
-            }
-        });
+    <div class="fish" id="diver3">
+        <img src="images/diver3.png">
+    </div>
 
-        const backgrounds = [
-            "images/bg1.jpg",
-            "images/bg2.jpg",
-            "images/bg3.jpg",
-            "images/bg4.jpg"
-        ];
+    <div class="fish" id="turtle">
+        <img src="images/turtle.png">
+    </div>
 
-        let bgIndex = 0;
-        const bgBtn = document.getElementById("bgBtn");
-        const content = document.getElementById("content");
+    <div class="fish" id="goldfish">
+        <img src="images/goldFishSchool.png">
+    </div>
 
-        bgBtn.onclick = function() {
-            bgIndex = (bgIndex + 1) % backgrounds.length;
-            content.style.backgroundImage = `url('${backgrounds[bgIndex]}')`;
-        };
-    </script>
+    <div class="fish" id="faintfish">
+        <img src="images/faintSchool.png">
+    </div>
+</div>
+
+<audio id="myAudio" autoplay loop>
+    <source src="babyshark.mp3" type="audio/mpeg">
+</audio>
+
+<div id="controls">
+    <button id="musicBtn">🔊 Tắt nhạc</button>
+    <button id="bgBtn">🖼 Đổi nền</button>
+</div>
+
+<script>
+    const audio = document.getElementById("myAudio");
+    const btn = document.getElementById("musicBtn");
+
+    btn.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            btn.textContent = "🔊 Tắt nhạc";
+        } else {
+            audio.pause();
+            btn.textContent = "🔈 Bật nhạc";
+        }
+    });
+
+    const backgrounds = [
+        "images/bg1.jpg",
+        "images/bg2.jpg",
+        "images/bg3.jpg",
+        "images/bg4.jpg"
+    ];
+
+    let bgIndex = 0;
+    const bgBtn = document.getElementById("bgBtn");
+    const content = document.getElementById("content");
+
+    bgBtn.onclick = function() {
+        bgIndex = (bgIndex + 1) % backgrounds.length;
+        content.style.backgroundImage = `url('${backgrounds[bgIndex]}')`;
+    };
+</script>
 
 </body>
 </html>
