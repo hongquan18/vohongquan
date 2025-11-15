@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoang Tan Phat - Professional CV</title>
+    <!-- Thêm Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Liên kết đến file CSS Tùy chỉnh của bạn -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Thêm Font Awesome cho icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- THANH ĐIỀU HƯỚNG (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">HOANG TAN PHAT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="cv.html"
+                >CV (English)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hoca.html">Fun Aquarium</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CV CONTENT SECTION -->
+    <div class="container cv-container">
+      <div class="row cv-row">
+        <!-- Cột BÊN TRÁI: THÔNG TIN CÁ NHÂN & KỸ NĂNG -->
+        <div class="col-lg-4 cv-left-col p-4">
+          <!-- AVATAR, TÊN, CHỨC DANH -->
+          <div class="text-center mb-4 cv-header">
+            <img
+              src="avatar.jpg"
+              class="img-fluid rounded-circle cv-avatar mb-3"
+              alt="Avatar"
+            />
+            <h4 class="text-white mb-0">Hoang Tan Phat</h4>
+            <p class="cv-title">IT Student</p>
+            <hr class="cv-hr" />
+          </div>
+
+          <!-- 1. CONTACT -->
+          <div class="cv-section mb-4">
+            <h5 class="cv-heading">CONTACT</h5>
+            <ul class="list-unstyled contact-list">
+              <li><i class="fas fa-phone me-2"></i> +84 946 618 006</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:hoangtanphat2000xt@gmail.com"
+                  >hoangtanphat2000xt@gmail.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> Ho Chi Minh City,
+                Vietnam
+              </li>
+              <li>
+                <i class="fab fa-github me-2"></i>
+                <a
+                  href="https://github.com/hoangtanphat2000xt-sudo"
+                  target="_blank"
+                  >GitHub Profile</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-linkedin me-2"></i>
+                <a
+                  href="https://www.linkedin.com/in/ph%C3%A1t-ho%C3%A0ng-t%E1%BA%A5n-388741398/"
+                  target="_blank"
+                  >LinkedIn Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. ABOUT ME -->
+          <div class="cv-section mb-4">
+            <h5 class="cv-heading">ABOUT ME</h5>
+            <p class="cv-content-text">
+              Highly motivated first-year IT student at HCMUE, passionate about
+              web development and problem-solving. Eager to master new tools and
+              contribute technical knowledge to innovative projects.
+            </p>
+          </div>
+
+          <!-- 3. TECHNICAL SKILLS -->
+          <div class="cv-section mb-4">
+            <h5 class="cv-heading">TECHNICAL SKILLS</h5>
+            <ul class="list-unstyled skills-list">
+              <li>**Programming Basics:** C, Python (or C++)</li>
+              <li>**Web Fundamentals:** HTML5, CSS3, Basic JavaScript</li>
+              <li>**Version Control:** Git (Basic usage: add, commit, push)</li>
+              <li>**Tools:** Visual Studio Code, Microsoft Office</li>
+            </ul>
+          </div>
+
+          <!-- 4. INTERESTS (Sở Thích) -->
+          <div class="cv-section mb-4">
+            <h5 class="cv-heading">INTERESTS</h5>
+            <ul class="list-unstyled hobbies-list">
+              <li><i class="fas fa-gamepad me-2"></i> Tech Gaming & Esports</li>
+              <li><i class="fas fa-code me-2"></i> Learning New Frameworks</li>
+              <li><i class="fas fa-book-open me-2"></i> Reading Tech Blogs</li>
+            </ul>
+          </div>
+
+          <!-- 5. REFERENCES (Người Tham Chiếu) -->
+          <div class="cv-section mb-4">
+            <h5 class="cv-heading">REFERENCES</h5>
+            <div class="reference-item">
+              <p class="ref-name mb-0">**Mr. Hien Luong**</p>
+              <p class="ref-contact mb-0">
+                Facebook:
+                <a
+                  href="https://www.facebook.com/hienlth.hcmue/"
+                  target="_blank"
+                  >hienlth.hcmue/</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- 6. LANGUAGES -->
+          <div class="cv-section mb-0">
+            <h5 class="cv-heading">LANGUAGES</h5>
+            <p class="cv-content-text">Vietnamese (Native)</p>
+            <p class="cv-content-text">English IELTS 6.5 (or specify level)</p>
+          </div>
+        </div>
+
+        <!-- Cột BÊN PHẢI: TÓM TẮT, DỰ ÁN, GIÁO DỤC -->
+        <div class="col-lg-8 cv-right-col p-4">
+          <!-- 1. PROFILE SUMMARY -->
+          <section class="mb-5">
+            <h3 class="right-col-heading">PROFILE SUMMARY</h3>
+            <p class="section-content">
+              Enthusiastic and dedicated Information Technology freshman with a
+              strong foundation in programming and web development. Proficient
+              in Python, C++, JavaScript, HTML, and CSS, with hands-on
+              experience in building responsive websites using Bootstrap. Adapt
+              at version control with Git and passionate about learning new
+              technologies. Excellent problem-solving skills and a collaborative
+              team player eager to contribute to innovative projects.
+            </p>
+          </section>
+
+          <!-- 2. COURSEWORK PROJECTS & PERSONAL PROJECTS -->
+          <section class="mb-5">
+            <h3 class="right-col-heading">
+              COURSEWORK PROJECTS & PERSONAL PROJECTS
+            </h3>
+            <!-- Dự án 1 -->
+            <div class="item-entry">
+              <div class="item-duration">Coursework Project | Fall 2024</div>
+              <h4 class="item-title">Basic Calculator App (C/Python)</h4>
+              <ul class="item-description-list">
+                <li>
+                  Developed a simple command-line calculator program to practice
+                  fundamental concepts like loops, functions, and conditional
+                  statements.
+                </li>
+                <li>
+                  Applied basic debugging techniques to ensure logical accuracy.
+                </li>
+              </ul>
+            </div>
+            <!-- Dự án 2 -->
+            <div class="item-entry">
+              <div class="item-duration">Personal Project | Oct 2024</div>
+              <h4 class="item-title">Static Personal Website</h4>
+              <p class="item-subtitle">
+                Web Fundamentals (HTML5, CSS3, Bootstrap)
+              </p>
+              <ul class="item-description-list">
+                <li>
+                  Designed and coded a responsive single-page portfolio using
+                  HTML5, CSS3, and Bootstrap.
+                </li>
+                <li>
+                  Deployed the website using "GitHub Pages" to practice version
+                  control and deployment workflows.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- 3. EDUCATION -->
+          <section class="mb-5">
+            <h3 class="right-col-heading">EDUCATION</h3>
+            <div class="item-entry">
+              <div class="item-duration">
+                2024 – Present (Expected Graduation: 2028)
+              </div>
+              <h4 class="item-title">
+                Bachelor of Information Technology (B.I.T)
+              </h4>
+              <p class="item-subtitle">
+                Ho Chi Minh City University of Education (HCMUE)
+              </p>
+              <p class="item-description">
+                Currently pursuing the Bachelor's degree in Information
+                Technology.
+              </p>
+              <p class="item-description">
+                Relevant Coursework (Year 1): Introduction to Programming
+                (C/Python), Basic Algorithms, Discrete Mathematics.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thêm Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
