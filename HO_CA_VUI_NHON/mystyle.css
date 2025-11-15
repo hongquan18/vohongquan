@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     background: white;
-    overflow: hidden;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 70px);
+    height: 100vh;
     padding-top: 70px;
 }
 
